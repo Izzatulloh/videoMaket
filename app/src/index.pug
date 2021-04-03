@@ -1,0 +1,276 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="./css/main.min.css")
+        link(rel="stylesheet", href="./library/fontawesome/css/all.min.css")
+    body
+        header.header
+            .header__container
+                .header__menu 
+                    a.header__menu-item
+                        <span class="header__menu-firstIcon"></span>
+                        <span class="header__menu-secIcon first__rotate"></span>
+                        <span class="header__menu-secIcon sec__rotate"></span>
+                        <span class="header__menu-thirdIcon "></span>
+                img.header__container-img(src="./img/logo.webp", alt="")
+                nav.header__nav
+                    -var links = ['Home', 'Product', 'Pricing', 'About', 'Contact']
+                    ul.header__list 
+                        each link in links  
+                            li.header__list-item 
+                                a.header__list-link(href="#")= link
+                    .header__icon
+                        a(href="") 
+                            img(src="./img/twiter.webp", alt="") 
+                        a(href="") 
+                            img(src="img/facebook.webp", alt="")
+                        a.last__link(href="") 
+                            img(src="img/in.webp", alt="")
+                .header__mid
+                    h1.header__mid-title The best products start with Figma
+                    p.header__mid-text Most calendars are designed for teams. Slate is designed for freelancers
+                    a.header__mid-link(href="#") Try For Free 
+                    
+        main 
+            section.video
+                h2.video__title Features
+                p.video__text Most calendars are designed for teams. Slate is designed for freelancers
+                
+                    .video__part 
+                        .video__part-item 
+                              img(src="./img/icon__1.webp", alt="")
+                              h2.video__part-title OpenType features Variable fonts
+                              p.video__part-text Slate helps you see how many more days you need to work to reach your financial goal.
+                        .video__part-item 
+                              img(src="./img/icon__2.webp", alt="")
+                              h2.video__part-title Design with real data
+                              p.video__part-text Slate helps you see how many more days you need to work to reach your financial goal.
+                        .video__part-item 
+                              img(src="./img/icon__3.webp", alt="")
+                              h2.video__part-title Fastest way to take action
+                              p.video__part-text Slate helps you see how many more days you need to work to reach your financial goal.
+                .video__player 
+                    .video__player-item
+                        video(src="./img/video.mp4" poster="./img/video__screen.webp") 
+                    a.video__player-icon()
+                        img(src="./img/video__player.webp", alt="" )
+                    .video__progress
+                        input.progress(type="range" max="100" value="0")
+                    div.video__icons
+                        .between 
+                            <span class="fas fa-play"></span>
+                            <span class="fas fa-stop"></span>
+                            <span class="fas fa-backward"></span>
+                            <span class="fas fa-forward"></span>
+                            label.label(for="")
+                                <span class="fas fa-volume-up"></span>
+                                input.volume(type="range" value="50" min=0 max=100) 
+                            span.video__time  0:00
+                        <span class="fullScreen fas fa-expand-wide"></span>
+                    
+                     
+                            
+                        
+                      
+            section.organize 
+                .organize__item 
+                    .organize__item-part 
+                        h2.organize__item-title Fastest way to organize          
+                        p.organize__item-text Most calendars are designed for teams. Slate is designed for freelancers          
+                        a.header__mid-link.organize__item-link(href="#") Try For Free           
+                    .organize__item-part 
+                        img(src="./img/Macbook Pro.webp", alt="")      
+            section.light
+                .light__item
+                    
+                    .light__item-part 
+                        img(src="./img/section__photo.webp", alt="")
+                    .light__item-part 
+                        h1.light__item-title At your fingertips
+                        h2.light__title Lightning fast prototyping 
+                        h1.light__item-title Subscribe to our Newsletter
+                        p.light__item-text Available exclusivery on Figmaland
+                        .light__item-part-sec 
+                            input(type="text" placeholder="Your Email")
+                            button Subscribe 
+            section.partner 
+                h2.partner__title Partners
+                p.partner__text Most calendars are designed for teams. Slate is designed for freelancers
+                .partner__item
+                    .partner__item-Lpart
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/logos_google.webp", alt="") 
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/amazon.webp", alt="")
+                    .partner__item-Rpart 
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/microsoft.webp", alt="") 
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/uber.webp", alt="") 
+                            .partner__item
+                .partner__item
+                    .partner__item-Lpart
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/dropbox.webp", alt="") 
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/uber.webp", alt="") 
+                    .partner__item-Rpart
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/logos_google.webp", alt="") 
+                        .partner__item-sections 
+                            p Client Name
+                            img(src="./img/amazon.webp", alt="") 
+                a.header__mid-link.organize__item-link.partner__link(href="#") Try For Free    
+            section.ibm
+                h2.ibm__title Testimonials
+                img(src="./img/ibm.webp", alt="")   
+                p.ibm__text Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.                      
+                .ibm__item 
+                    img(src="./img/Ellipse 2.webp", alt="") 
+                    .ibm__item-sec 
+                        p Organize across   
+                        p Ui designer
+                a.header__mid-link.organize__item-link.partner__link(href="#") More Testimonials
+            section.price 
+                .price__item 
+                    h2.partner__title.price__title Pricing
+                    p.partner__text.price__text Most calendars are designed for teams. Slate is designed for freelancers
+                    .price__item-sec 
+                        .price__item-sec-part 
+                            h3 FREE
+                            p.price__item-text Organize across all apps by hand
+                            .price__info 
+                                h2 0
+                                .price__info-item 
+                                    h3 $
+                                    p Per Month
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            a.header__mid-link.price__link(href="#") Try For Free
+                        .price__item-sec-part 
+                            h3 STANDARD
+                            p.price__item-text Organize across all apps by hand
+                            .price__info 
+                                h2 10
+                                .price__info-item 
+                                    h3 $
+                                    p Per Month
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            a.header__mid-link.price__link(href="#") Try For Free
+                        .price__item-sec-part 
+                            h3 BUSINESS
+                            p.price__item-text Organize across all apps by hand
+                            .price__info 
+                                h2 99
+                                .price__info-item 
+                                    h3 $
+                                    p Per Month
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            p.price__item-sec-text Pricing Feature
+                            a.header__mid-link.price__link(href="#") Try For Free
+            section.contact 
+                h2.partner__title Pricing
+                p.partner__text Most calendars are designed for teams. Slate is designed for freelancers
+                .contact__item 
+                    .contact__item-info 
+                        form(action="")
+                            h2.contact__item-info-title Contact Us
+                            input(type="text" placeholder="Your Name") 
+                            input(type="text" placeholder="Your Email") 
+                            textarea(type="text" placeholder="Your Message")
+                            button send
+                    .contact__left-info 
+                        .contact__item-section 
+                            .contact__item-section-part 
+                                svg
+                                    use(xlink:href="./img/svg/sprite.svg#map")  
+                                a(href="")  6386 Spring St undefined Anchorage, Georgia 12473 United States    
+                            .contact__item-section-part 
+                                svg
+                                    use(xlink:href="./img/svg/sprite.svg#phone")   
+                                a(href="tel:998946715566")  (94) 671-55-66 
+                            .contact__item-section-part 
+                                svg
+                                    use(xlink:href="./img/svg/sprite.svg#send")  
+                                a(href="mailto:Izzatulloh@gmail.com")  Izzatulloh@gmail.com 
+                        .contact__location 
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d191885.50263675497!2d69.13928277818499!3d41.28251254609851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b0cc379e9c3%3A0xa5a9323b4aa5cb98!2z0KLQsNGI0LrQtdC90YI!5e0!3m2!1sru!2s!4v1616943392733!5m2!1sru!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> 
+                            .contact__location-item 
+                                a(href="")  
+                                    img(src="./img/twiter2.webp", alt="")
+                                a(href="") 
+                                    img(src="./img/facebook2.webp", alt="")
+                                a(href="") 
+                                    img(src="./img/in2.webp", alt="")
+        //- footer 
+            .footer 
+                .footer__item
+                    .footer__item-part
+                        h2.footer__list-title Pages
+                        -var links = ['Home', 'Product', 'Pricing', 'About', 'Contact']
+                        ul.footer__list 
+                            each link in links  
+                                li.header__list-item 
+                                    a.footer__list-link(href="#")= link
+                    .footer__item-part
+                        h2.footer__list-title Tomothy 
+                        -var links = ['Eleanor Edwards', 'Ted Robertson', 'Annette Russell', 'Jennie Mckinney', 'Gloria Richards']
+                        ul.footer__list 
+                            each link in links  
+                                li.header__list-item 
+                                    a.footer__list-link(href="#")= link
+                    .footer__item-part
+                        h2.footer__list-title Jane Black
+                        -var links = ['Philip Jones', 'Product', 'Colleen Russell', 'Marvin Hawkins', 'Bruce Simmmons']
+                        ul.footer__list 
+                            each link in links  
+                                li.header__list-item 
+                                    a.footer__list-link(href="#")= link
+                .footer__item-secPart
+                    .footer__item-secPart-info 
+                        svg    
+                            use(xlink:href="./img/svg/sprite.svg#map")
+                        a(href="") 7480 Mockingbird Hill undefined 
+                    .footer__item-secPart-info 
+                        svg    
+                            use(xlink:href="./img/svg/sprite.svg#phone")
+                        a(href="tel:946715566") (94) 671 55 66 
+                    .footer__item-secPart-info 
+                        a(href="")  
+                            img(src="./img/twiter.webp", alt="")
+                        a(href="") 
+                            img(src="./img/facebook.webp", alt="")
+                        a(href="") 
+                            img(src="./img/in.webp", alt="")
+        script(src="./js/main.min.js")              
+                     
+                       
+                        
+                           
+                         
+                         
+                
+                
+                     
+                

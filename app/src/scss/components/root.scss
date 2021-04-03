@@ -1,0 +1,16 @@
+$fonts: ("Graphik", 'Regular', 400),
+        ("Graphik", 'Black', 900),
+        ("Graphik", 'Bold', 700),
+        ("Graphik", 'Medium', 900);
+
+@each $name, $sub-name, $w in $fonts{
+    @font-face {
+        font-family: $name+$sub-name;
+        src: url(../fonts/#{$name}-#{$sub-name}.woff);
+        font-weight: $w;
+    }
+}
+
+
+
+        
